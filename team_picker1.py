@@ -48,8 +48,10 @@ print("#### Next please insert two team names ####\n")
 team_name1 = input("Insert First Team Name: \n")
 teams.append(team_a)
 
-team_name2 = input("Insert Second Team Name: \n\n")
+team_name2 = input("Insert Second Team Name: \n")
 teams.append(team_b)
+print("\n")
+
 
 ## After all inputs have be established the program will start randomly pulling a name
 ## Inserting it into team_a until there are three names left in the players set.
@@ -93,7 +95,8 @@ while len(players) > 0:
     players.remove(player_6)
 
 print("Team", team_name2)
-print(team_b, "\n")
+print(team_b)
+print("\n")
 
 print("Thanks for using my program!")
 print("Created by Garrett Johnson,2018")
