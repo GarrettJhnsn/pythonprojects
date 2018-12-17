@@ -2,10 +2,10 @@
 
 from random import randint
 
-print("#### Simple Rock vs. Paper Game!                ####\n")
-print("#### Please type one of the following options   ####\n")
+print("#### Simple Rock vs. Paper Game!                ####")
+print("#### Please type one of the following options   ####")
 
-player = input("#### Rock, Paper, or Scissors                   ####\n\n")
+player = input("#### Rock, Paper, or Scissors                   ####\n")
 print("You Played:\n")
 print(player)
 
