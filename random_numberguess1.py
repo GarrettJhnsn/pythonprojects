@@ -1,6 +1,9 @@
+"""IMPORT RANDOM LIB"""
+
+
 from random import randint
 
-#total_guess holds the value of how many attempts have been made to guess the number
+"""TOTAL GUESSES FROM USERS STORED IN VARIABLE TOTAL_GUESS"""
 
 total_guess = []
 
@@ -10,21 +13,19 @@ print("#### Pick any number between 1 and 5 and see if  ####")
 print("#### you can guess the random number!            ####")
 print("#### You will also only receive 3 guesses!       ####\n")
 
-#user_guess is the variable for the input string and it is converted into an integer on the following line.
-
+"""USER INPUT 1 - 5/NO FLOAT/INT CONVERSION/APPEND USER INPUT IF GUESS IS INCORRECT TO TOTAL_GUESS"""
 
 user_guess = input("Enter a number between 1 and 5 \n")
 guess_int = int(user_guess)
 total_guess.append(user_guess)
 
-#random_num is a variable that holds the value of the randomly generated number
-#So (1, 5) = 1, 2, 3, 4, 5 allowing a number to be randomly selected from the range
+"""RANDOM INT GENERATED 1 - 5"""
 
 random_num = randint(1, 5)
 
 print("Your guess:", user_guess)
 
-#While len(total_guess) < 3: allows for the loop to continue for only 3 guesses
+"""IF USER GUESSES INCORRECT WHILE LOOP FOR 2 MORE CHANCES"""
 
 while len(total_guess) < 3:
     if guess_int != random_num:
@@ -33,8 +34,12 @@ while len(total_guess) < 3:
         guess_int = int(user_guess)
         print("Your guess:", user_guess)
 
-#The loop will continue until total_guess > 2 or guess_int == random_num
+"""IF THE USER FAILS AFTER 3 CHANCES IT WILL AUTO PRINT WHAT THE RANDOM NUMBER WAS AND END THE CODE"""
+
 print("The random number was:", random_num)
+
+"""IF THE RANDOM NUMBER IS GUESSED CORRECTLY CONGRATS WILL BE DISPLAYED"""
+
 if guess_int == random_num:
     print("Congrats! You guessed the correct number!")
 
