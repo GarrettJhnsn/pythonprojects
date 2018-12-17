@@ -1,3 +1,9 @@
+## 
+##  THIS DETERMINES SOMEONE AGE FOR THE DAY IT WAS CREATED
+##  IT ONLY VERIFYS PEOPLE WHO TURNED 18 EITHER ON OR BEFORE DEC, 16 2018
+##  VARIABLES CAN BE ADJUSTED TO CURRENT DAY
+##  NO AUTOMATIC ADJUSTER JUST BASIC PROGRAMMING
+
 
 print("####              ****Please use only whole numbers****             ####")
 print("####    If you enter anything else you will get an error            ####")
