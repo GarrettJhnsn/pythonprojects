@@ -7,7 +7,7 @@ born = input("Enter Birth Year: ")
 born = int(born)
 age = 2025 - born
 
-"""PRINT CAPTION WITH ANSWER BASED ON INPUT"""
+"""PRINT CAPTION WITH ANSWER BASED ON USER INPUT"""
 
 print("In the year 2025 you will be", age, "years old!")
 
