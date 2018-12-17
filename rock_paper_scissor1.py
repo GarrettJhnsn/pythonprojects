@@ -6,7 +6,7 @@ print("#### Simple Rock vs. Paper Game!                ####")
 print("#### Please type one of the following options   ####")
 
 player = input("#### Rock, Paper, or Scissors                   ####\n")
-print("You Played:\n")
+print("You Played:")
 print(player)
 
 #rRandom number generator 1-3
@@ -21,7 +21,7 @@ elif chosen_random == 2:
 elif chosen_random == 3:
     computer = "Scissors"
 
-print("\nThe Computer played: \n")
+print("The Computer played:")
 print(computer)
 
 #Currently does not have capability to show invalid option if incorrect valu is given,

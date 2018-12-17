@@ -15,6 +15,7 @@ print("#### You will also only receive 3 guesses!       ####\n")
 
 user_guess= input("Enter a number between 1 and 5 \n")
 guess_int = int(user_guess)
+total_guess.append(user_guess)
 
 ##random_num is a variable that holds the value of the randomly generated number
 ##So (1, 5) = 1, 2, 3, 4, 5 allowing a number to be randomly selected from the range
@@ -23,11 +24,9 @@ random_num = randint(1, 5)
 
 print("Your guess:", user_guess)
 
-##While len(total_guess) < 2: allows for the loop to continue only if it total_guess is equal to 2 integers
-##It only needs two in the loop because the first guess is not counted, can possibly update to loop as a whole
-##counting the first guess
+##While len(total_guess) < 3: allows for the loop to continue for only 3 guesses
 
-while len(total_guess) < 2:
+while len(total_guess) < 3:
     if guess_int != random_num:
         user_guess = input("You guessed incorrectly...sorry please try again!\n")
         total_guess.append(user_guess)
